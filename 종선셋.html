@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS 연습</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        h1 {
+            margin: 40px 30px 20px 20px;
+            padding: 20px;
+        }
+        div {
+            margin: 20px;
+            padding: 30px;
+            border: solid 5px rgb(179, 202, 218);
+            border-radius: 20px;
+            background-color: rgb(236, 248, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>HTML, CSS 연습</h1>
+    <div>
+    <audio controls> <source src="/Develop-home/Develop-/html,css공부파일/source/audio/1012. Buddy.mp3"> </audio>
+    <img src="/Develop-home/Develop-/html,css공부파일/source/pic/스파토데아.gif" width="300">
+    <video width = "400" controls loop>
+    <source src="/Develop-home/Develop-/html,css공부파일/source/video/sample.mp4" width ="200"></video>
+     <br>음악, 사진, 동영상 </div>
+     
+    
+     <div>
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;HTML과 CSS의 역할 </h2>
+        <ul> 
+         <li>HTML은 웹 페이지의 구조를 정의하는 마크업 언어입니다.</li>
+         <li>웹 페이지의 콘텐츠를 구성하는 모든 요소들을 정의하며, <br>
+            제목, 단락, 이미지, 링크 등 다양한 요소들을 포함합니다</li>
+         </ul>
+         <br>
+         <h3>다음은 HTML의 주요 역할입니다</h3>
+         <br>
+         <ol>
+            <li>콘텐츠 구조화: 제목, 단락, 목록, 링크, 이미지 등 다양한 콘텐츠를 구조화합니다.</li>
+            <li>요소 정의: 웹 페이지에서 사용할 다양한 HTML 요소들을 정의합니다.</li>
+            <li>링크 생성: 다른 웹 페이지나 리소스로의 하이퍼링크를 생성합니다.</li>
+            </ol>
+            <a href ="/Develop-home/Develop-/html,css공부파일/종선셋/text href.html"> CSS의 역할 알아보기 </a>                                                              
+         </div>
+    <div ><h3> form 양식</h3>  <br>
+        <form>
+            아이디 :&nbsp;<input type="text"> <br> <br>
+
+            비밀번호 :&nbsp;<input type="password"> <br> <br>
+
+            성별 <br> <br>
+            <input type="radio" name="remeber" checked> man     
+            <input type="radio" name="remeber"> woman <br> <br>
+
+            사용하는 SNS는? <br> <br>
+            <input type="checkbox"name="1"> X 
+            <input type="checkbox"name="2"> 인스타그램
+            <input type="checkbox"name="3"> 스레드
+            <input type="checkbox"name="4"> 페이스북
+            <input type="checkbox"name="5"> 기타
+            <input type="checkbox"name="6"> 하지않음 <br>
+            프로필 사진 업로드 <br><br>
+            <form>
+                <input type="file">
+
+            <br><br>
+            이메일 입력 <br>
+            <input type="text"><br><br>
+
+            <input type="submit" value="저장하기">
+            <input type="button" value="중복확인">
+            <input type="reset" value="초기화">
+            
+        </form>
+    </div>
+    <div>
+        <h3> input 태그의 속성 </h3><br>
+        <form>
+            아이디 :&nbsp;<input type="text" value="김말똥" readonly><br>
+            닉네임 :&nbsp;<input type="text" autofocus><br>
+            전화번호 :&nbsp; <input type ="text" placeholder="010-123-1234"><br>
+            생년월일 : &nbsp;<input type ="text" value="031025" disabled><br>
+            이메일 :&nbsp;<input type ="text" value = 1234@naver.com><br>
+            
+            </form>
+    </div>
+
+    <div >
+        <h3>폼 양식 2</h3><br>
+
+        <form> 
+            이메일 : <input type="text" value="1234"> @
+            <select>
+                <option>naver.com</option>
+                <option>hanmail.net</option>
+                <option>gmail.com</option>
+                <option>nate.com</option>
+                <option>직접입력</option>
+            </select>
+        <br><br>
+
+        오늘의 다짐<br>
+        <textarea cols="40" rows="4"></textarea>
+        </form>
+                
+    </div>
+    
+    <div >
+        <h3>테이블 삽입</h3>
+        <table border="3">
+            <tr>
+                <th>지역</th> <th>최저기온</th> <th>최고기온</th>
+            </tr>
+            <tr>
+                <td>서울</td> <td>10</td> <td>20</td>
+            </tr>
+            <tr>
+                <td>대구</td> <td>10</td> <td>20</td>
+            </tr>
+            <tr>
+                <td>부산</td> <td>10</td> <td>20</td>
+            <tr>
+                <td>광주</td> <td>10</td> <td>20</td>
+                </tr>
+            </tr>
+        </table>
+
+        </div>
+    
+    <div>
+        <h3>테이블 병합</h3>
+        <table border="3">
+            <tr>
+                <th>지역</th> <th colspan="2"> 최저/최고기온</th> <th>습도</th>
+            </tr>
+            <tr>
+                <th>서울</th> <td>20</td> <td>30</td><td>60</td>
+            </tr>
+            <tr>
+                <th>대구</th> <td>20</td> <td>30</td><td>60</td>
+            </tr>
+            <tr>
+                <th>부산</th> <td>20</td> <td>30</td><td>60</td>
+            </tr>
+            <tr>
+                <th>광주</th> <td>20</td> <td>30</td><td>60</td>
+            </tr>
+        </table>
+
+        <table border="3">
+             <tr>
+                <th></th> <th></th> <th colspan="2">최저/최고기온</th> 
+            </tr>
+
+            <tr>
+                <td rowspan="2">경기도</td> <td>인천</td> <td>20</td> <td>30</td>
+                  
+            </tr>
+
+            <tr>
+                                            <td>수원</td> <td>20</td> <td>30</td>
+                  
+            </tr>
+
+            <tr>
+                <td rowspan="2">강원도</td> <td>강릉</td> <td>20</td> <td>30</td>
+              
+            </tr>
+
+            <tr>
+                                        <td>원주</td> <td>20</td> <td>30</td>
+              
+            </tr>
+
+            <tr>
+                <td rowspan="2">전라도</td> <td>광주</td> <td>20</td> <td>30</td>
+          
+            </tr>
+
+            <tr>
+                                    <td>전주</td> <td>20</td> <td>30</td>
+          
+            </tr>
+
+
+
+
+        </table>
+        
+    </div>
+</body>
+</html>
